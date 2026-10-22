@@ -6,7 +6,7 @@ $wilChatBase = isset($wilChatBase) ? $wilChatBase : '../';
 <div id="wil-chat" class="wil-chat" data-endpoint="<?php echo htmlspecialchars($wilChatBase, ENT_QUOTES); ?>chatbot.php">
   <button id="wil-chat-toggle" class="wil-chat-toggle" type="button" aria-controls="wil-chat-panel" aria-expanded="false" aria-label="Open WIL Help">Chat with WIL Help</button>
   <section id="wil-chat-panel" class="wil-chat-panel" hidden aria-label="WIL Connect Helper">
-    <header class="wil-chat-header"><div><strong>WIL Connect Helper</strong><small>Application assistance • No AI API</small></div><button id="wil-chat-close" type="button" aria-label="Close chatbot">×</button></header>
+    <header class="wil-chat-header"><div><strong>WIL Connect Helper</strong><small>Student support</small></div><button id="wil-chat-close" type="button" aria-label="Close chatbot">×</button></header>
     <div id="wil-chat-history" class="wil-chat-history" role="log" aria-live="polite"><p class="wil-chat-bot">Hi! I can help you register, verify your email, add badges to your profile and apply for WIL jobs.</p></div>
     <div id="wil-chat-suggestions" class="wil-chat-suggestions">
       <button type="button" data-question="How do I register as a student?">Student registration</button>
