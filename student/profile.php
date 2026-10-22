@@ -324,5 +324,6 @@ $months = [
 
     <?php endif; ?>
 
+<?php require __DIR__ . '/chat_widget.php'; ?>
 </body>
 </html>
