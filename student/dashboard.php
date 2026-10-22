@@ -69,4 +69,5 @@ try {
         <?php endif; ?>
     </div>
     
+<?php require __DIR__ . '/chat_widget.php'; ?>
 </body>
