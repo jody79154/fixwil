@@ -27,3 +27,8 @@ The bot gives guidance only. It does not access personal application records, pr
 Edit the `$rules` array in `student/chatbot.php`, adding more specific terms before generic ones when possible. The engine chooses the longest matching whole-word phrase. Responses should describe only confirmed features.
 
 No main branch files were changed by this feature branch until its PR is merged.
+
+## Public support
+The chatbot now appears on `wil-home.php`, `register.php` and `student_register.php` before login, with the shared `chatbot.php` POST JSON endpoint. This endpoint requires no session and intentionally cannot read or change personal account data. Student pages continue to include the same widget with relative paths. The `student/chatbot.php` endpoint remains authenticated for compatibility and loads the same rules.
+
+Registration guidance is based on `includes/registerhandler.inc.php` (Richfield student email, password validation, verification code), and badge guidance is based on `student/edit_profile.php` and the `certifications` schema. Badge issuers named in example answers are not an approved whitelist.
