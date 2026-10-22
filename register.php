@@ -263,5 +263,6 @@
                 </div>
             </div>
         </div>
-    </body>
+    <?php $wilChatBase = ''; require __DIR__ . '/student/chat_widget.php'; ?>
+</body>
 </html>
