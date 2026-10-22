@@ -1225,5 +1225,6 @@ function addBadge() {
 
 </script>
 
+<?php require __DIR__ . '/chat_widget.php'; ?>
 </body>
 </html>
