@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  /*background: linear-gradient(135deg, #011c4b, #029def);*/
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  width: 420px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.form-content {
+  margin: 20px 30px 6px;
+  padding: 15px 0;
+  background-color: transparent;
+}
+
+.input-group {
+  position: relative;
+  margin: 10px 0;
+  width: 98%;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px 9px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #1a1a1a;
+  font-size: 13px;
+  /*16px;*/
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  border-color: #029def;
+}
+
+.input-group label {
+  position: absolute;
+  left: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  padding: 0 4px;
+  color: #555;
+  font-size: 13px;
+  /*16px;*/
+  transition: 0.15s ease all;
+  pointer-events: none;
+}
+
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown)+label {
+  top: 0;
+  transform: translateY(-50%) scale(0.85);
+  color: #011c4b;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+}
+
+.date-group label {
+  top: 0;
+  transform: translateY(-50%) scale(0.85);
+  color: #011c4b;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+}
+
+.input-group:has(#name) {
+  margin-top: 16px;
+}
+
+.form-content button {
+  width: 98%;
+  margin: 15px 0;
+  padding: 9px 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 40px;
+  color: #fff;
+  background: linear-gradient(100deg, #011c4b, #029def);
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.remember {
+  display: flex;
+  font-size: 14px;
+}
+
+.rememberMe {
+  margin-left: 0.3em;
+  color: #011c4b;
+  font-weight: bold;
+}
+
+.forgot-pass {
+  margin: 0 0 0 6.8em;
+}
+
+.signup-txt {
+  font-size: 15px;
+}
+
+.signup {
+  margin-left: 5px;
+}
+
+#error {
+  display: none;
+  border: 1px solid red;
+  border-radius: 6px;
+  padding: 8px;
+  color: red;
+  background-color: #ffe2ea;
+}
+
+.input-group input.input-error {
+  border-color: red;
+}
+
+.input-group input.input-error:not(:placeholder-shown)+label,
+.input-group input.input-error:focus+label {
+  color: red;
+}
+
+.header-txt {
+  font-size: 13px;
+}
